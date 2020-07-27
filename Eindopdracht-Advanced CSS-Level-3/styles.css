@@ -1,0 +1,174 @@
+body {
+  background-color: lightgray;
+}
+
+.social-media {
+  position: relative;
+  float: right;
+  margin-top: 100px;
+}
+
+.wrapper1 {
+  width: 50px;
+  height: 40px;
+  -webkit-transition: width .35 ease-in;
+  transition: width .35 ease-in;
+}
+
+.wrapper1__blog {
+  background-color: #e17b77;
+  width: 50px;
+  height: 40px;
+}
+
+.wrapper1:hover .wrapper1__blog {
+  width: 200px;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.wrapper1:hover .wrapper1__blog > span {
+  display: inline-block;
+  color: white;
+}
+
+.wrapper1__blog::before {
+  content: "\f5fc";
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Font Awesome 5 Free";
+}
+
+.wrapper2 {
+  width: 50px;
+  height: 40px;
+  -webkit-transition: width .35 ease-in;
+  transition: width .35 ease-in;
+}
+
+.wrapper2__twitter {
+  background-color: #00aced;
+  width: 50px;
+  height: 40px;
+  color: white;
+}
+
+.wrapper2:hover .wrapper2__twitter {
+  width: 200px;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.wrapper2:hover .wrapper2__twitter > span {
+  display: inline-block;
+  color: white;
+}
+
+.wrapper2__twitter::before {
+  content: "\f099";
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.wrapper3 {
+  width: 50px;
+  height: 40px;
+  -webkit-transition: width .35 ease-in;
+  transition: width .35 ease-in;
+}
+
+.wrapper3__linkedin {
+  background-color: #007bb6;
+  width: 50px;
+  height: 40px;
+  color: white;
+}
+
+.wrapper3:hover .wrapper3__linkedin {
+  width: 200px;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.wrapper3:hover .wrapper3__linkedin > span {
+  display: inline-block;
+  color: white;
+}
+
+.wrapper3__linkedin::before {
+  content: "\f0e1";
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.wrapper4 {
+  width: 50px;
+  height: 40px;
+  -webkit-transition: width .35 ease-in;
+  transition: width .35 ease-in;
+}
+
+.wrapper4__facebook {
+  background-color: #3b5998;
+  width: 50px;
+  height: 40px;
+  color: white;
+}
+
+.wrapper4:hover .wrapper4__facebook {
+  width: 200px;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.wrapper4:hover .wrapper4__facebook > span {
+  display: inline-block;
+  color: white;
+}
+
+.wrapper4__facebook::before {
+  content: "\f39e";
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.wrapper5 {
+  width: 50px;
+  height: 40px;
+  -webkit-transition: width .35 ease-in;
+  transition: width .35 ease-in;
+}
+
+.wrapper5__github {
+  background-color: #333;
+  width: 50px;
+  height: 40px;
+  color: white;
+}
+
+.wrapper5:hover .wrapper5__github {
+  width: 200px;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.wrapper5:hover .wrapper5__github > span {
+  display: inline-block;
+  color: white;
+}
+
+.wrapper5__github::before {
+  content: "\f09b";
+  display: inline-block;
+  margin: 5px 10px;
+  font-family: "Font Awesome 5 Brands";
+}
+
+span {
+  display: none;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

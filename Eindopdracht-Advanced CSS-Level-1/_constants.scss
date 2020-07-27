@@ -1,0 +1,11 @@
+
+@mixin standard-border {
+    border: solid none thin;
+}
+
+@mixin size-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}

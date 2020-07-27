@@ -1,0 +1,153 @@
+@import "./constants";
+body {
+    background-color: white;
+
+}
+
+.grid-container {
+    @include standard-grid-display();
+    grid-template-columns: 200px;
+    //width: 300px;
+         
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+    position: relative;
+    text-align: center;
+    
+}
+
+.backgroundItem {
+    margin: 7px;
+    border-radius: 10%;
+    height: 200px;
+    width: 170px;
+    background-color: rgb(68, 73, 88);
+}
+
+img {
+    border-radius: 10%;
+    height: 200px;
+    width: 170px;
+    visibility: visible;
+    opacity: 1;
+    &:hover {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: all .35s ease-in .5s;
+    }
+
+}
+
+.btn-item  {
+    text-align: center;
+    padding: 5px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+ div.item1 img ~ a,  div.item2 img ~ a, div.item3 img ~ a, div.item4 img ~ a,
+ div.item5 img ~ a, div.item6 img ~ a, div.item7 img ~ a {
+     display: none;
+     
+ } 
+
+ div.item1 img:hover ~ a, div.item2 img:hover ~ a, div.item3 img:hover ~ a, div.item4 img:hover ~ a,
+ div.item5 img:hover ~ a, div.item6 img:hover ~ a,  div.item7 img:hover ~ a {
+    display: block;
+           
+ }
+
+
+@media (min-width: 768px) {
+
+    body {
+        background-color: green;
+    
+    } 
+    .grid-container {
+        @include standard-grid-display();
+        grid-template-columns: 200px 200px;
+        //width: 500px;     
+    }
+    .item1 {
+        @include column-start-1();
+       
+    }
+
+    .item2 {
+        @include column-start-2();
+    }
+
+    .item3 {
+        @include column-start-1();
+    }
+
+    .item4 {
+        @include column-start-2();
+    }
+
+    .item5 {
+        @include column-start-1();
+    }
+
+    .item6 {
+        @include column-start-2();
+    }
+
+    .item7 {
+        @include column-start-1();
+        
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        background-color: white;
+
+    } 
+    .grid-container {
+        @include standard-grid-display();
+        grid-template-columns: 200px 200px 200px;
+        //width: 800px;
+       // height: 665px;  
+    }
+    
+    .item1 {
+        @include column-start-1();
+       
+    }
+
+    .item2 {
+        @include column-start-2();
+    }
+
+    .item3 {
+        @include column-start-3();
+    }
+
+    .item4 {
+        @include column-start-1();
+    }
+
+    .item5 {
+        @include column-start-2();
+    }
+
+    .item6 {
+        @include column-start-3();
+    }
+
+    .item7 {
+        @include column-start-1();
+        
+    }
+
+}
+
+    
+    

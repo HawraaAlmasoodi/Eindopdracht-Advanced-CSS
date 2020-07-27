@@ -1,0 +1,159 @@
+@import "./constants";
+body {
+    background-color: lightgray;
+    
+   
+}
+.social-media {
+   position: relative;
+   float: right;
+   margin-top: 100px;
+ 
+}
+
+
+.wrapper1 {
+    @include standard-wrapper();
+    &__blog {
+    background-color: #e17b77;
+    width: 50px;
+    height: 40px;
+    } 
+    &:hover .wrapper1__blog {
+    @include standard-hover-div();
+   }
+   &:hover .wrapper1__blog > span {
+    @include standard-hover-span();
+   }
+   &__blog::before {
+    content: "\f5fc";
+    display: inline-block;
+    margin: 5px 10px;
+    font-family: "Font Awesome 5 Free";
+    }
+  }
+
+.wrapper2 {
+    @include standard-wrapper();
+    &__twitter {
+    background-color: #00aced;
+    width: 50px;
+    height: 40px;
+    color: white;
+    }
+    &:hover .wrapper2__twitter {
+        @include standard-hover-div();
+       
+    }
+    &:hover .wrapper2__twitter > span {
+        @include standard-hover-span();
+    }
+    &__twitter::before {
+        content: "\f099";
+        display: inline-block;
+        margin: 5px 10px;
+        font-family: "Font Awesome 5 Brands";
+     }  
+  }
+
+.wrapper3 {
+    @include standard-wrapper();
+    &__linkedin {
+    background-color: #007bb6;
+    width: 50px;
+    height: 40px;
+    color: white;
+    }
+    &:hover .wrapper3__linkedin {
+        @include standard-hover-div();
+    }
+    &:hover .wrapper3__linkedin > span {
+        @include standard-hover-span();
+    }
+    &__linkedin::before {
+    content: "\f0e1";
+    display: inline-block;
+    margin: 5px 10px;
+    font-family: "Font Awesome 5 Brands";
+    }
+ }
+
+.wrapper4 {
+    @include standard-wrapper();
+    &__facebook {
+    background-color: #3b5998;
+    width: 50px;
+    height: 40px;
+    color: white; 
+    }
+    &:hover .wrapper4__facebook {
+        @include standard-hover-div();
+    }
+    &:hover .wrapper4__facebook > span {
+    @include standard-hover-span();
+    }
+    &__facebook::before {
+    content: "\f39e";
+    display: inline-block;
+    margin: 5px 10px;
+    font-family: "Font Awesome 5 Brands";
+    }
+
+ }
+
+.wrapper5{
+    @include standard-wrapper();
+    &__github {
+    background-color: #333;
+    width: 50px;
+    height: 40px;
+    color: white;
+    }
+    &:hover .wrapper5__github {
+        @include standard-hover-div();
+       
+    }
+    &:hover .wrapper5__github > span {
+        @include standard-hover-span();
+
+    }
+    &__github::before {
+        content: "\f09b";
+        display: inline-block;
+        margin: 5px 10px;
+        font-family: "Font Awesome 5 Brands";
+     }
+ }
+
+span {
+    display: none;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+  
+ 
+  
