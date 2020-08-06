@@ -6,9 +6,8 @@ body {
 
 .grid-container {
     @include standard-grid-display();
-    grid-template-columns: 200px;
-    //width: 300px;
-         
+    grid-template-columns: minmax(200px, auto);
+           
 }
 
 .item1, .item2, .item3, .item4, .item5, .item6, .item7 {
@@ -18,17 +17,18 @@ body {
 }
 
 .backgroundItem {
-    margin: 7px;
-    border-radius: 10%;
-    height: 200px;
-    width: 170px;
+    margin: 5px;
+    border-radius: 5%;
+    height: 450px;
+    width: auto;
+    position: relative;
     background-color: rgb(68, 73, 88);
 }
 
 img {
-    border-radius: 10%;
-    height: 200px;
-    width: 170px;
+     border-radius: 5%;
+    height: 450px;
+    width: 100%;
     visibility: visible;
     opacity: 1;
     &:hover {
@@ -48,14 +48,12 @@ img {
     transform: translate(-50%, -50%);
 }
   
- div.item1 img ~ a,  div.item2 img ~ a, div.item3 img ~ a, div.item4 img ~ a,
- div.item5 img ~ a, div.item6 img ~ a, div.item7 img ~ a {
+ img ~ a {
      display: none;
      
  } 
 
- div.item1 img:hover ~ a, div.item2 img:hover ~ a, div.item3 img:hover ~ a, div.item4 img:hover ~ a,
- div.item5 img:hover ~ a, div.item6 img:hover ~ a,  div.item7 img:hover ~ a {
+ img:hover ~ a {
     display: block;
            
  }
@@ -67,41 +65,25 @@ img {
         background-color: green;
     
     } 
+    
     .grid-container {
         @include standard-grid-display();
-        grid-template-columns: 200px 200px;
-        //width: 500px;     
+        grid-template-columns: repeat(2, minmax(300px, auto));
+        grid-gap: 5px;     
     }
-    .item1 {
-        @include column-start-1();
-       
+    
+    .backgroundItem {
+        height: 300px;
+        width: auto;
+        margin: 5px;
+
     }
 
-    .item2 {
-        @include column-start-2();
+    img {
+        height: 300px;
+        width: 100%;
     }
-
-    .item3 {
-        @include column-start-1();
-    }
-
-    .item4 {
-        @include column-start-2();
-    }
-
-    .item5 {
-        @include column-start-1();
-    }
-
-    .item6 {
-        @include column-start-2();
-    }
-
-    .item7 {
-        @include column-start-1();
-        
-    }
-
+    
 }
 
 @media (min-width: 1024px) {
@@ -112,41 +94,8 @@ img {
     } 
     .grid-container {
         @include standard-grid-display();
-        grid-template-columns: 200px 200px 200px;
-        //width: 800px;
-       // height: 665px;  
+        grid-template-columns: repeat(3, minmax(200px, auto));  
     }
-    
-    .item1 {
-        @include column-start-1();
-       
-    }
-
-    .item2 {
-        @include column-start-2();
-    }
-
-    .item3 {
-        @include column-start-3();
-    }
-
-    .item4 {
-        @include column-start-1();
-    }
-
-    .item5 {
-        @include column-start-2();
-    }
-
-    .item6 {
-        @include column-start-3();
-    }
-
-    .item7 {
-        @include column-start-1();
-        
-    }
-
 }
 
     
