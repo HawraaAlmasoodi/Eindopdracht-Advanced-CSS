@@ -1,21 +1,6 @@
 @mixin standard-grid-display {
     display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+    justify-content: stretch;
+    align-content: center;
     background-color: rgb(211, 201, 201);
-}
-@mixin column-start-1 {
-    grid-column-start: 1;
-        grid-column: 1;
-}
-
-@mixin column-start-2 {
-    grid-column-start: 2;
-        grid-column: 2;
-}
-
-@mixin column-start-3 {
-    grid-column-start: 3;
-        grid-column: 3;
 }
