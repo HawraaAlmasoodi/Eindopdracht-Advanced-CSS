@@ -1,15 +1,18 @@
 @mixin standard-wrapper {
     width: 50px;
-    height: 40px;
-    transition: width .35 ease-in;
+    height: 50px;
+    transition: all 0.5s 0.3s ease;
 }
 
 @mixin standard-hover-div {
-    width: 200px;
+    width: 250px;
     transform: translateX(-150px);
+    transition: all 0.5s 0.3s ease;
 }
 
 @mixin standard-hover-span {
-    display: inline-block;
+    opacity: 1 ;
     color: white;
+    transition: all .5s .3s linear;
+
 }
