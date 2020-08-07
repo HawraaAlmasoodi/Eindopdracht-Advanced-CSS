@@ -8,167 +8,188 @@ body {
   margin-top: 100px;
 }
 
+span {
+  opacity: 0;
+  text-decoration: underline;
+}
+
 .wrapper1 {
   width: 50px;
-  height: 40px;
-  -webkit-transition: width .35 ease-in;
-  transition: width .35 ease-in;
+  height: 50px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper1__blog {
   background-color: #e17b77;
-  width: 50px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
+  color: white;
 }
 
 .wrapper1:hover .wrapper1__blog {
-  width: 200px;
+  width: 250px;
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper1:hover .wrapper1__blog > span {
-  display: inline-block;
+  opacity: 1;
   color: white;
+  -webkit-transition: all .5s .3s linear;
+  transition: all .5s .3s linear;
 }
 
 .wrapper1__blog::before {
   content: "\f5fc";
   display: inline-block;
-  margin: 5px 10px;
+  margin: 15px 15px 17px 21px;
   font-family: "Font Awesome 5 Free";
 }
 
 .wrapper2 {
   width: 50px;
-  height: 40px;
-  -webkit-transition: width .35 ease-in;
-  transition: width .35 ease-in;
+  height: 50px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper2__twitter {
   background-color: #00aced;
-  width: 50px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   color: white;
 }
 
 .wrapper2:hover .wrapper2__twitter {
-  width: 200px;
+  width: 250px;
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper2:hover .wrapper2__twitter > span {
-  display: inline-block;
+  opacity: 1;
   color: white;
+  -webkit-transition: all .5s .3s linear;
+  transition: all .5s .3s linear;
 }
 
 .wrapper2__twitter::before {
   content: "\f099";
   display: inline-block;
-  margin: 5px 10px;
+  margin: 15px 15px 17px 21px;
   font-family: "Font Awesome 5 Brands";
 }
 
 .wrapper3 {
   width: 50px;
-  height: 40px;
-  -webkit-transition: width .35 ease-in;
-  transition: width .35 ease-in;
+  height: 50px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper3__linkedin {
   background-color: #007bb6;
-  width: 50px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   color: white;
 }
 
 .wrapper3:hover .wrapper3__linkedin {
-  width: 200px;
+  width: 250px;
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper3:hover .wrapper3__linkedin > span {
-  display: inline-block;
+  opacity: 1;
   color: white;
+  -webkit-transition: all .5s .3s linear;
+  transition: all .5s .3s linear;
 }
 
 .wrapper3__linkedin::before {
   content: "\f0e1";
   display: inline-block;
-  margin: 5px 10px;
+  margin: 15px 15px 17px 21px;
   font-family: "Font Awesome 5 Brands";
 }
 
 .wrapper4 {
   width: 50px;
-  height: 40px;
-  -webkit-transition: width .35 ease-in;
-  transition: width .35 ease-in;
+  height: 50px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper4__facebook {
   background-color: #3b5998;
-  width: 50px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   color: white;
 }
 
 .wrapper4:hover .wrapper4__facebook {
-  width: 200px;
+  width: 250px;
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper4:hover .wrapper4__facebook > span {
-  display: inline-block;
+  opacity: 1;
   color: white;
+  -webkit-transition: all .5s .3s linear;
+  transition: all .5s .3s linear;
 }
 
 .wrapper4__facebook::before {
   content: "\f39e";
   display: inline-block;
-  margin: 5px 10px;
+  margin: 15px 15px 17px 21px;
   font-family: "Font Awesome 5 Brands";
 }
 
 .wrapper5 {
   width: 50px;
-  height: 40px;
-  -webkit-transition: width .35 ease-in;
-  transition: width .35 ease-in;
+  height: 50px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper5__github {
   background-color: #333;
-  width: 50px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   color: white;
 }
 
 .wrapper5:hover .wrapper5__github {
-  width: 200px;
+  width: 250px;
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
 }
 
 .wrapper5:hover .wrapper5__github > span {
-  display: inline-block;
+  opacity: 1;
   color: white;
+  -webkit-transition: all .5s .3s linear;
+  transition: all .5s .3s linear;
 }
 
 .wrapper5__github::before {
   content: "\f09b";
   display: inline-block;
-  margin: 5px 10px;
+  margin: 15px 15px 17px 21px;
   font-family: "Font Awesome 5 Brands";
-}
-
-span {
-  display: none;
-  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
